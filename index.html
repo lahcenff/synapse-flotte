@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synapse Flotte — L'automatisation métier des sinistres flottes automobiles</title>
+<meta name="description" content="Synapse Flotte automatise les process de gestion des sinistres flottes automobiles pour les cabinets de courtage et les grandes flottes. Expertise terrain de 17 ans.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Synapse Flotte — accueil">
+      <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <circle cx="6" cy="14" r="3" fill="#3B82F6"/>
+        <circle cx="22" cy="6" r="3" fill="#fff" opacity=".9"/>
+        <circle cx="22" cy="22" r="3" fill="#fff" opacity=".9"/>
+        <path d="M8.5 12.5L19.5 7.5M8.5 15.5L19.5 20.5" stroke="#fff" stroke-width="1.5" opacity=".6"/>
+      </svg>
+      Synapse Flotte
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#probleme">Le constat</a>
+      <a href="#automatisations">Automatisations</a>
+      <a href="#pourquoi">Expertise</a>
+      <a href="#process">Méthode</a>
+    </nav>
+    <a href="#audit" class="btn btn-primary">Demander un audit</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">L'automatisation métier des sinistres flottes automobiles</span>
+      <h1>Arrêtez de perdre du temps sur vos sinistres flottes</h1>
+      <p class="lead">Nous automatisons vos process de gestion de sinistres pour réduire les délais, supprimer les relances inutiles et libérer vos gestionnaires. Expertise terrain de 17 ans.</p>
+      <div class="hero-ctas">
+        <a href="#audit" class="btn btn-primary">Demander un audit de process sinistres
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <a href="#automatisations" class="btn btn-ghost">Voir les automatisations concrètes</a>
+      </div>
+      <div class="hero-proof">
+        <span>Cabinets de courtage</span>
+        <span>Flottes PME · ETI · grands comptes</span>
+        <span>Délégations de gestion</span>
+      </div>
+    </div>
+
+    <!-- Signature : suivi de dossier automatisé -->
+    <div class="dash" aria-label="Aperçu d'une interface de suivi de sinistre automatisée" role="img">
+      <div class="dash-bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span class="path">suivi-sinistres / dossiers-en-cours / SIN-2026-0418</span>
+        <span class="chip auto">workflow actif</span>
+      </div>
+      <div class="dash-body">
+        <div class="dash-main">
+          <div class="dash-title">
+            <strong>Collision matérielle — VU · Fourgon</strong>
+            <span class="ref">Ouvert 02/09 · 08:41</span>
+          </div>
+          <div class="flow" id="flow">
+            <div class="flow-line" id="flowLine"></div>
+            <div class="step" data-i="0">
+              <div class="step-name">Déclaration reçue et qualifiée</div>
+              <span class="chip auto">auto</span>
+              <div class="step-meta">Constat + 4 photos · responsabilité pressentie 0 %</div>
+              <div class="step-time">08:41</div>
+            </div>
+            <div class="step" data-i="1">
+              <div class="step-name">Pièces manquantes détectées</div>
+              <span class="chip auto">auto</span>
+              <div class="step-meta">Carte grise manquante → demande envoyée au conducteur</div>
+              <div class="step-time">08:42</div>
+            </div>
+            <div class="step" data-i="2">
+              <div class="step-name">Déclaration transmise à l'assureur</div>
+              <span class="chip auto">auto</span>
+              <div class="step-meta">Dossier complet · délégation de gestion appliquée</div>
+              <div class="step-time">09:15</div>
+            </div>
+            <div class="step" data-i="3">
+              <div class="step-name">Orientation réparateur réseau</div>
+              <span class="chip auto">auto</span>
+              <div class="step-meta">Garage agréé à 6 km · véhicule relais proposé</div>
+              <div class="step-time">09:16</div>
+            </div>
+            <div class="step" data-i="4">
+              <div class="step-name">Relance expert — J+3</div>
+              <span class="chip wait">planifiée</span>
+              <div class="step-meta">Aucune action gestionnaire requise</div>
+              <div class="step-time">05/09</div>
+            </div>
+          </div>
+        </div>
+        <div class="dash-side">
+          <div class="kpis">
+            <div class="kpi"><small>Délai moyen dossiers simples</small><b>2,4 j</b><em>▼ vs 9,1 j avant</em></div>
+            <div class="kpi"><small>Relances manuelles / semaine</small><b>14</b><em>▼ vs 87 avant</em></div>
+            <div class="kpi"><small>Dossiers complets à J0</small><b>91 %</b><em>▲ vs 46 % avant</em></div>
+            <div class="kpi"><small>Immobilisation moyenne</small><b>6,8 j</b><em>▼ vs 12,5 j avant</em></div>
+          </div>
+          <div class="queue">
+            <small>À traiter par un gestionnaire</small>
+            <ul>
+              <li><span>SIN-2026-0412</span><small>Litige responsabilité</small><span class="chip wait">humain</span></li>
+              <li><span>SIN-2026-0397</span><small>Devis &gt; seuil délégation</small><span class="chip wait">humain</span></li>
+              <li><span>SIN-2026-0418</span><small>En cours</small><span class="chip ok">auto</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLÈME -->
+<section id="probleme">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Le constat</span>
+      <h2>Ce que vivent vraiment les équipes sinistres flottes</h2>
+      <p class="lead">Les mêmes frictions reviennent dans tous les cabinets et toutes les flottes que nous avons vus de l'intérieur. Elles ne sont pas une fatalité.</p>
+    </div>
+    <div class="pains rv">
+      <div class="pain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h3"/></svg>
+        <p>Déclarations incomplètes ou mal renseignées<small>Chaque pièce manquante repousse l'ouverture du dossier de plusieurs jours.</small></p>
+      </div>
+      <div class="pain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h16v12H7l-3 3z"/><path d="M8 9h8M8 12h5"/></svg>
+        <p>Relances multiples<small>Assureurs, experts, réparateurs, conducteurs : le gestionnaire passe son temps à courir après l'information.</small></p>
+      </div>
+      <div class="pain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <p>Dossiers qui stagnent plusieurs jours<small>Sans alerte, un dossier en attente devient un dossier oublié.</small></p>
+      </div>
+      <div class="pain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></svg>
+        <p>Manque de visibilité en temps réel<small>Impossible de répondre en une minute à « où en est le dossier de la semaine dernière ? »</small></p>
+      </div>
+      <div class="pain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        <p>Reporting difficile à produire pour les renouvellements<small>Le reporting sinistralité se reconstitue à la main, tard, et arrive incomplet en négociation.</small></p>
+      </div>
+      <div class="pain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        <p>Gestionnaires saturés par des tâches à faible valeur ajoutée<small>Ressaisie, copier-coller, mails de suivi : le temps d'expertise part dans l'administratif.</small></p>
+      </div>
+      <div class="pain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 15h2l2-6h9l2 4h3v4h-2"/><circle cx="8" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M10 17h5"/></svg>
+        <p>Immobilisations trop longues qui coûtent cher<small>Chaque jour de véhicule à l'arrêt est un coût direct pour la flotte, rarement mesuré.</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="dark" id="solution">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <span class="eyebrow">Notre approche</span>
+        <h2 style="margin-bottom:20px">Une automatisation pensée par des gens du métier</h2>
+        <p class="lead">Nous ne vendons pas de l'IA générique. Nous analysons vos process réels de gestion de sinistres, identifions les goulots d'étranglement et mettons en place des automatisations précises et opérationnelles.</p>
+      </div>
+      <div class="keys rv">
+        <div class="key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <div><h3>Analyse de vos process actuels</h3><p>Cartographie de la chaîne réelle, de la déclaration à la clôture, avec les délais et les points de rupture mesurés.</p></div>
+        </div>
+        <div class="key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+          <div><h3>Automatisation ciblée des étapes chronophages</h3><p>On automatise ce qui coûte du temps sans apporter de valeur, et rien d'autre. Les décisions restent aux gestionnaires.</p></div>
+        </div>
+        <div class="key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+          <div><h3>Mise en production rapide</h3><p>Les automatisations s'intègrent à vos outils existants. Premiers workflows en production en quelques semaines, pas en mois.</p></div>
+        </div>
+        <div class="key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+          <div><h3>Suivi des gains et ajustements</h3><p>Chaque automatisation est mesurée : délais, relances évitées, complétude. On ajuste sur les chiffres.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAS D'USAGE -->
+<section id="automatisations">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Cas d'usage</span>
+      <h2>Ce que nous automatisons concrètement</h2>
+      <p class="lead">Quatre chantiers qui concentrent l'essentiel du temps perdu dans la gestion des sinistres flottes.</p>
+    </div>
+    <div class="cases rv">
+      <article class="case">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></div>
+        <h3>Prise en charge et qualification automatique des déclarations</h3>
+        <p>Réception, contrôle de complétude, extraction des données du constat, pré-lecture de responsabilité et demande immédiate des pièces manquantes. Le dossier est exploitable dès son arrivée.</p>
+        <ul><li>constat amiable</li><li>pièces manquantes</li><li>qualification</li></ul>
+      </article>
+      <article class="case">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M21 12a8 8 0 1 1-2.3-5.7"/><path d="M21 4v5h-5"/></svg></div>
+        <h3>Relances intelligentes et suivi des interlocuteurs</h3>
+        <p>Chaque étape a un délai attendu. Assureur, expert, réparateur ou conducteur : la relance part au bon moment, avec le bon contexte, et remonte au gestionnaire uniquement si elle reste sans réponse.</p>
+        <ul><li>assureur</li><li>expert</li><li>réparateur</li><li>conducteur</li></ul>
+      </article>
+      <article class="case">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 0 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Orientation automatisée vers le réseau de réparateurs</h3>
+        <p>Selon le type de sinistre, la localisation et les accords en place, le véhicule est orienté vers le réparateur agréé adapté, avec proposition de véhicule relais et suivi de l'immobilisation.</p>
+        <ul><li>réseau agréé</li><li>immobilisation</li><li>véhicule relais</li></ul>
+      </article>
+      <article class="case">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-8M22 20H2"/></svg></div>
+        <h3>Reporting sinistralité et indicateurs automatisés</h3>
+        <p>Délais par étape, coûts moyens, fréquence, S/P par contrat, véhicules et sites à risque : les indicateurs se produisent en continu et sont prêts avant le renouvellement.</p>
+        <ul><li>S/P</li><li>délais</li><li>coûts</li><li>renouvellement</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI -->
+<section class="dark" id="pourquoi">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="cred rv">
+        <div class="big">17<sup>ans</sup></div>
+        <p>de gestion opérationnelle de sinistres flottes automobiles, côté courtage.</p>
+        <hr>
+        <div class="logos">
+          <span>Marsh McLennan</span>
+          <span>Grand cabinet de courtage français</span>
+        </div>
+      </div>
+      <div class="rv">
+        <span class="eyebrow">Pourquoi Synapse Flotte</span>
+        <h2 style="margin-bottom:32px">L'expertise qui fait la différence</h2>
+        <ul class="why-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><h3>17 ans d'expérience opérationnelle en gestion de sinistres flottes</h3><p>Nous avons traité les dossiers, subi les relances et produit les reportings de renouvellement. Nous savons où le temps se perd.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><h3>Expérience Marsh McLennan et grand cabinet de courtage français</h3><p>Les exigences des grands comptes et les contraintes d'un cabinet français, vues de l'intérieur.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><h3>Approche métier d'abord, technologie ensuite</h3><p>On part du process et du dossier, pas de l'outil. La technologie sert une étape identifiée, jamais l'inverse.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><h3>Solutions adaptées aux réalités des cabinets français</h3><p>Délégations de gestion, process assureurs, seuils de compétence, contraintes réglementaires : tout est intégré dans les workflows.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RÉSULTATS -->
+<section id="resultats">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Résultats attendus</span>
+      <h2>Des gains mesurables</h2>
+      <p class="lead">Chaque automatisation est suivie par un indicateur. Les ordres de grandeur ci-dessous correspondent à ce que nous visons sur les périmètres où les process sont majoritairement manuels.</p>
+    </div>
+    <div class="results rv">
+      <div class="result">
+        <div class="val">−50 à −70<small>%</small></div>
+        <h3>Temps de traitement des dossiers simples</h3>
+        <p>Qualification, transmission et orientation traitées sans intervention manuelle.</p>
+      </div>
+      <div class="result">
+        <div class="val">−80<small>% et plus</small></div>
+        <h3>Relances manuelles</h3>
+        <p>Les relances de routine partent seules. Le gestionnaire n'intervient que sur les cas bloqués.</p>
+      </div>
+      <div class="result">
+        <div class="val">&gt; 90<small>%</small></div>
+        <h3>Dossiers complets à l'ouverture</h3>
+        <p>Les pièces manquantes sont demandées à la minute, pas à la relance suivante.</p>
+      </div>
+      <div class="result">
+        <div class="val">Temps réel</div>
+        <h3>Visibilité sur la sinistralité</h3>
+        <p>Indicateurs à jour pour piloter la flotte et arriver préparé en négociation de primes.</p>
+      </div>
+    </div>
+    <p class="results-note">Objectifs indicatifs, fixés et mesurés dossier par dossier lors de l'audit.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="dark" id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Comment ça se passe</span>
+      <h2>De l'échange initial à la mise en production</h2>
+      <p class="lead">Un parcours en quatre étapes, sans engagement avant le chiffrage.</p>
+    </div>
+    <div class="steps rv">
+      <div class="pstep">
+        <span class="num">ÉTAPE 1</span>
+        <h3>Échange de diagnostic</h3>
+        <p>Nous comprenons votre organisation, vos volumes, vos délégations et les frictions que vous constatez.</p>
+        <span class="dur">30 à 45 min</span>
+      </div>
+      <div class="pstep">
+        <span class="num">ÉTAPE 2</span>
+        <h3>Audit de vos process sinistres</h3>
+        <p>Cartographie de la chaîne de traitement, mesure des délais par étape et identification des goulots d'étranglement.</p>
+        <span class="dur">moins de 10 jours</span>
+      </div>
+      <div class="pstep">
+        <span class="num">ÉTAPE 3</span>
+        <h3>Automatisations prioritaires et chiffrage</h3>
+        <p>Une proposition ciblée sur les étapes à plus fort impact, avec gains attendus et budget clairs.</p>
+        <span class="dur">proposition écrite</span>
+      </div>
+      <div class="pstep">
+        <span class="num">ÉTAPE 4</span>
+        <h3>Mise en œuvre et transfert</h3>
+        <p>Déploiement sur vos outils, formation des gestionnaires, suivi des indicateurs et transfert de la maîtrise à vos équipes.</p>
+        <span class="dur">quelques semaines</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta" id="audit">
+  <div class="wrap">
+    <div class="cta-grid">
+      <div class="cta-copy rv">
+        <span class="eyebrow">Audit gratuit</span>
+        <h2>Prêt à reprendre le contrôle de vos sinistres flottes ?</h2>
+        <p class="lead">Demandez un audit gratuit de vos process de gestion de sinistres. Nous identifions en moins de 10 jours les automatisations à fort impact.</p>
+        <ul class="cta-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Réponse sous 24 h ouvrées</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Échange direct avec un expert sinistres flottes, pas un commercial</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Aucun engagement avant le chiffrage</span></li>
+        </ul>
+      </div>
+      <div class="rv">
+        <form id="auditForm" novalidate>
+          <div class="row">
+            <div class="field"><label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" autocomplete="given-name" required></div>
+            <div class="field"><label for="nom">Nom</label><input id="nom" name="nom" type="text" autocomplete="family-name" required></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="entreprise">Entreprise</label><input id="entreprise" name="entreprise" type="text" autocomplete="organization" required></div>
+            <div class="field"><label for="fonction">Fonction</label><input id="fonction" name="fonction" type="text" autocomplete="organization-title" placeholder="Responsable sinistres, gestionnaire de flotte…" required></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="email">Email professionnel</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field">
+            <label for="volume">Volume approximatif de sinistres flottes par an</label>
+            <select id="volume" name="volume" required>
+              <option value="" disabled selected>Sélectionner</option>
+              <option>Moins de 100</option>
+              <option>100 à 500</option>
+              <option>500 à 2 000</option>
+              <option>2 000 à 10 000</option>
+              <option>Plus de 10 000</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Demander mon audit gratuit</button>
+          <p class="form-note">Vos données ne sont utilisées que pour vous recontacter au sujet de votre demande.</p>
+        </form>
+        <div class="form-success" id="formSuccess" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          <h3>Demande envoyée</h3>
+          <p>Nous revenons vers vous sous 24 h ouvrées pour fixer l'échange de diagnostic.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="brand">
+      <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <circle cx="6" cy="14" r="3" fill="#3B82F6"/>
+        <circle cx="22" cy="6" r="3" fill="#fff" opacity=".9"/>
+        <circle cx="22" cy="22" r="3" fill="#fff" opacity=".9"/>
+        <path d="M8.5 12.5L19.5 7.5M8.5 15.5L19.5 20.5" stroke="#fff" stroke-width="1.5" opacity=".6"/>
+      </svg>
+      Synapse Flotte
+    </a>
+    <nav aria-label="Liens de bas de page">
+      <a href="#probleme">Le constat</a>
+      <a href="#automatisations">Automatisations</a>
+      <a href="#pourquoi">Expertise</a>
+      <a href="#audit">Audit gratuit</a>
+      <a href="#">Mentions légales</a>
+    </nav>
+    <span class="legal">© 2026 Synapse Flotte</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
